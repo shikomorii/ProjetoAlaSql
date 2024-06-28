@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Aplicação</title>
+
+    
+    <link rel="stylesheet" href="css/styles.css">
+
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/alasql@latest"></script>
+
+  
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+
+    <div class="container1">
+        <h1 class="title">Seja bem-vindo</h1>
+        <div id="output" class="output"></div>
+        <div id="importSuccessMessage" class="success-message" style="display: none;">Banco de dados importado com sucesso!</div>
+        <div id="errorMessage" class="error-message" style="display: none;"></div> 
+    </div>
+
+
+
+
+
+    
+    <div class="container form-container">
+        <h2 class="form-title">Formulário de Registro</h2>
+        <form id="formCliente" action="/submit_form" method="post">
+            <div class="form-row">
+                <label for="Nome">Nome completo:</label>
+                <input type="text" id="Nome" name="Nome" required>
+            </div>
+
+            <div class="form-row">
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="123.456.789-10" required>
+            </div>
+
+            <div class="form-row">
+                <label for="Data">Data de Nascimento:</label>
+                <input type="date" id="Data" name="Data" required>
+            </div>
+
+            <div class="form-row">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+
+            <div class="form-row">
+                <label for="celular">Celular:</label>
+                <input type="tel" id="celular" name="celular" required>
+            </div>
+
+            <fieldset id="enderecoPrincipal" class="form-row">
+                <legend>Endereço Principal:</legend>
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep">
+                <label for="rua">Rua:</label>
+                <input type="text" id="rua" name="rua">
+                <label for="Estado">Estado:</label>
+                <input type="text" id="Estado" name="Estado">
+                <label for="Pais">País:</label>
+                <input type="text" id="Pais" name="Pais">
+            </fieldset>
+
+            <fieldset id="outrosEnderecos" class="form-row">
+                <legend>Outros Endereços:</legend>
+                
+                <div class="endereco">
+                    <hr>
+                    <label for="outroEndereco">Endereço:</label>
+                    <input type="text" id="outroEndereco" name="outroEndereco">
+                    <label for="cep2">CEP:</label>
+                    <input type="text" id="cep2" name="cep">
+                    <label for="rua2">Rua:</label>
+                    <input type="text" id="rua2" name="rua">
+                    <label for="Estado2">Estado:</label>
+                    <input type="text" id="Estado2" name="Estado">
+                    <label for="Pais2">País:</label>
+                    <input type="text" id="Pais2" name="Pais">
+                    <button type="button" class="removeEndereco">Remover</button>
+                </div>
+            </fieldset>
+
+            <button type="button" id="addEndereco" class="add-button">Adicionar Endereço</button>
+
+            <button type="submit" class="submit-button">Enviar</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="table-container">
+            <h2 class="table-title">Lista de Clientes</h2>
+            <table id="clients-table" class="clients-table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Data de Nascimento</th>
+                        <th>Telefone</th>
+                        <th>Celular</th>
+                        <th>CEP</th>
+                        <th>Rua</th>
+                        <th>Estado</th>
+                        <th>País</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+            <div class="table-actions">
+                <button id="export-json" class="export-button">Exportar Banco de Dados</button>
+
+                <br><br><br><br>
+                <input type="file" id="upload-sql-file" accept=".sql">
+                <button id="upload-sql" class="upload-button">Upload Banco de Dados SQL</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

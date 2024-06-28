@@ -1,0 +1,61 @@
+Sistema Web de Gestão de Clientes
+
+Visão Geral
+
+Seja bem-vindo ao meu sistema web de gestão de clientes. Este sistema foi desenvolvido com base em pesquisas detalhadas e foi projetado para ser intuitivo e eficiente de um jeito simples para a experiencia de usuario,utilizando a biblioteca AlaSQL para armazenamento e manipulação de dados diretamente no navegador. Aqui está uma explicação completa sobre como utilizar o sistema e um resumo de suas funcionalidades.
+
+ Como Utilizar o Sistema
+
+  Login e Criação de Conta
+
+1. Acesse a página de login.
+2. Crie sua conta inserindo seu nome e uma senha.
+ (o sistema não permite cadastrat dois usuarios iguais)
+3. Faça login no sistema com as credenciais criadas.
+
+  Registro de Clientes
+
+1. Formulário de Registro:
+   - Após o login, você será redirecionado para o formulário de registro de clientes.
+   - Preencha os campos obrigatórios como nome completo, CPF, data de nascimento, telefone e celular.
+   - No campo "Endereço Principal", insira as informações do endereço principal do cliente.
+   - Adicione outros endereços clicando em "Adicionar Endereço". Você pode remover endereços adicionais clicando no botão "Remover".
+
+2. Submissão do Formulário:
+   - Clique em "Enviar" para registrar o cliente no sistema.
+   - O CPF deve ser único; o sistema alertará se já existir um cliente registrado com o mesmo CPF.
+   
+
+ Visualização de Clientes
+
+1. Lista de Clientes:
+   - Abaixo do formulário de registro, você encontrará uma lista com todos os clientes registrados.
+   - A lista exibe informações como nome, CPF, data de nascimento, telefone, celular e endereço principal.
+   - Use a lista para visualizar de forma linear todas as informações dos clientes registrados.
+
+ Exportação e Importação de Dados
+
+1. Exportar Banco de Dados:
+   - Clique no botão "Exportar Banco de Dados" para baixar um arquivo JSON contendo todos os dados dos clientes registrados.
+
+2. Importar Banco de Dados:
+   - Clique em "Escolher Arquivo" e selecione um arquivo SQL pré-populado.
+   - Depois de escolher o arquivo, clique em "Upload Banco de Dados SQL".
+   - O sistema atualizará o banco de dados com os novos dados importados e atualizará a lista de clientes exibida.
+
+3. Banco de Dados Pré-Populado:
+   - Um arquivo chamado "clientes.sql" foi criado para testes. Você pode usá-lo para ver como a importação funciona.
+
+ Gerenciamento de Clientes
+
+1. Exclusão de Clientes:
+   - Na lista de clientes, clique no botão "Excluir" ao lado do cliente que deseja remover.
+   - O registro será excluído do banco de dados e a tabela será atualizada automaticamente.
+
+ Tecnologias Utilizadas
+
+- HTML e CSS: Para a estrutura e estilização do sistema.
+- JavaScript: Para a manipulação dinâmica do DOM e interação com o banco de dados.
+- AlaSQL: Biblioteca SQL em JavaScript utilizada para criar e gerenciar o banco de dados no navegador.
+- Local Storage do AlaSQL: Armazenamento dos dados do cliente no navegador para persistência.
+

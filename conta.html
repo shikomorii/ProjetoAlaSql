@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta</title>
+
+    
+    <link rel="stylesheet" href="css/stylogin.css">
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/alasql@latest"></script>
+
+    
+    <script src="js/conta.js" defer></script>
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const registerForm = document.getElementById('registerForm');
+            registerForm.addEventListener('submit', function(event) {
+                event.preventDefault(); 
+                
+                
+                window.location.href = 'login.html'; 
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="login-container">
+        <h1 class="title">Criar Conta</h1>
+        <form id="registerForm">
+            <label for="newUsername">Usuário:</label>
+            <input type="text" id="newUsername" name="newUsername" required>
+            
+            <label for="newPassword">Senha:</label>
+            <input type="password" id="newPassword" name="newPassword" required>
+            
+            <button type="submit" class="submit-button">Registrar</button>
+        </form>
+        <p>Já tem uma conta? <a href="login.html">Faça login</a></p>
+    </div>
+</body>
+</html>

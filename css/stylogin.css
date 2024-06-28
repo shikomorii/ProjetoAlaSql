@@ -1,0 +1,137 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+.title {
+    margin-bottom: 20px;
+    color: #07354e;
+}
+
+.form-row {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #07354e;
+}
+
+form input,
+form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+fieldset legend {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #07354e;
+}
+
+.btn-add,
+.submit-button {
+    background-color: #07354e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-add:hover,
+.submit-button:hover {
+    background-color: #07354e;
+}
+
+.clients-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.clients-table th,
+.clients-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.clients-table th {
+    background-color: #f2f2f2;
+}
+
+.clients-table tr:hover {
+    background-color: #e9ecef;
+}
+
+.table-container {
+    margin-top: 20px;
+}
+
+.table-title {
+    text-align: center;
+    color: #07354e;
+    margin-bottom: 15px;
+}
+
+.table-actions {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.export-button,
+.upload-button {
+    background-color: #07354e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.export-button:hover,
+.upload-button:hover {
+    background-color: #07354e;
+}
+
+
+footer {
+    background-color: #07354e;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

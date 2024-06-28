@@ -1,0 +1,6 @@
+INSERT INTO agrosqldb.clientes (nome, cpf, data_nascimento, telefone, celular, cep, rua, estado, pais) VALUES ('Ana Souza', '123.456.789-04', '1990-01-01', '12345678', '87654321', '12345-678', 'Rua A', 'Estado A', 'País A');
+INSERT INTO agrosqldb.clientes (nome, cpf, data_nascimento, telefone, celular, cep, rua, estado, pais) VALUES ('Paulo Oliveira', '123.456.789-03', '1985-05-05', '12345679', '87654322', '12345-679', 'Rua B', 'Estado B', 'País B');
+INSERT INTO agrosqldb.clientes (nome, cpf, data_nascimento, telefone, celular, cep, rua, estado, pais) VALUES ('carlo', '123.456.789-07', '1990-01-01', '12345678', '87654321', '12345-678', 'Rua A', 'Estado A', 'País A');
+INSERT INTO agrosqldb.clientes (nome, cpf, data_nascimento, telefone, celular, cep, rua, estado, pais) VALUES ('william', '123.456.789-08', '1985-05-05', '12345679', '87654322', '12345-679', 'Rua B', 'Estado B', 'País B');
+INSERT INTO agrosqldb.clientes (nome, cpf, data_nascimento, telefone, celular, cep, rua, estado, pais) VALUES ('henrique', '123.456.789-10', '1990-01-01', '12345678', '87654321', '12345-678', 'Rua A', 'Estado A', 'País A');
+INSERT INTO agrosqldb.clientes (nome, cpf, data_nascimento, telefone, celular, cep, rua, estado, pais) VALUES ('roberto', '123.456.789-11', '1985-05-05', '12345679', '87654322', '12345-679', 'Rua B', 'Estado B', 'País B');
